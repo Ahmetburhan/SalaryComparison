@@ -7,25 +7,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "reactstrap";
 const data1 = [
   {
-    amount: "Base Salary",
-    dollars: 155000
+    amount: "Base",
+    dollars: 166400
   },
   {
-    amount: "Sign up Bonus",
-    dollars: 4000
+    amount: "Sign UP",
+    dollars: 3000
   },
   {
     amount: "RSU",
     dollars: 50000
   },
   {
-    amount: "Performance Bonus",
-    dollars: 31000
+    amount: "Performance",
+    dollars: 16640
   }
 ];
 const data2 = [
   {
-    amount: "Base Salary",
+    amount: "Base",
     dollars: 155000
   }
 ];
@@ -35,10 +35,12 @@ function App() {
       <h1>Presentation for Nazeer Babu</h1>
       <Container>
         <Row>
-          <Col auto>
-            <Visual data={data1} comp={"Intuit"} total="240K" />
+          <Col>
+            <Visual data={data1} comp={"Intuit"} total="236K" />
           </Col>
-          <Col auto>
+          {/* </Row>
+        <Row> */}
+          <Col>
             <Visual data={data2} comp={"Cisco"} total="155K" />
           </Col>
         </Row>
