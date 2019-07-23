@@ -1,2 +1,0 @@
-# SalaryComparison
-Created with CodeSandbox
