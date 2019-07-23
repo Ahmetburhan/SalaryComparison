@@ -11,7 +11,7 @@ class Visual extends React.Component {
   }
   componentDidMount() {
     // Create chart instance
-    let chart = am4core.create("chartdiv", am4charts.PieChart);
+    let chart = am4core.create(this.props.comp, am4charts.PieChart);
     // Add data
     chart.data = this.props.data;
     console.log(chart.data);
