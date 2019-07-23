@@ -20,6 +20,8 @@ class Visual extends React.Component {
     let pieSeries = chart.series.push(new am4charts.PieSeries());
     pieSeries.dataFields.value = "dollars";
     pieSeries.dataFields.category = "amount";
+    chart.legend = new am4charts.Legend();
+
     this.chart = chart;
   }
 
@@ -32,7 +34,7 @@ class Visual extends React.Component {
   render() {
     return (
       <div>
-        <div id={this.props.comp} style={{ width: "600px", height: "400px" }} />
+        <div id={this.props.comp} style={{ width: "740px", height: "500px" }} />
         <h1>
           {this.props.comp} TC: {this.props.total}
         </h1>
